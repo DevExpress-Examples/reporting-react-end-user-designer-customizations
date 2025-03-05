@@ -4,7 +4,7 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 [![](https://img.shields.io/badge/💬_Leave_Feedback-feecdd?style=flat-square)](#does-this-example-address-your-development-requirementsobjectives)
 <!-- default badges end -->
-# Reporting for React - Customize a Web Report Designer to a React App (Next.js)
+# Reporting for React - Customize a Web Report Designer in a React App (Next.js)
 
 This example incorporates the Web Report Designer into a client-side app built with React. The example consists of two parts:
 
