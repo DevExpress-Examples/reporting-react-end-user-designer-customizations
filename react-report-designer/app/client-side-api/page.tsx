@@ -8,10 +8,10 @@ const ReportDesigner = dynamic(() => import('devexpress-reporting-react/dx-repor
 
 function App() {
   const onTabChanged = ({ args }: { args: any }): void => {
-    alert("The tab was changed to " + args.Tab.displayName());
+    alert("The tab was changed to " + args.Tab.displayName);
   };
   const onReportOpened = ({ args }: { args: any }): void => {
-    args.Report.measureUnit("TenthsOfAMillimeter");
+    args.Report.measureUnit = "TenthsOfAMillimeter";
   };
   const onPreviewCustomizeMenuActions = ({ args }: { args: any }): void => {
     var actions = args.Actions;

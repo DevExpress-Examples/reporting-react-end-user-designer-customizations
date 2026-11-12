@@ -10,20 +10,7 @@ This example incorporates the Web Report Designer into a client-side app built w
 
 - The [ServerSideApp](ServerSideApp) folder contains the backend project. The project is an ASP.NET Core application that enables [cross-domain requests (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (Access-Control-Allow-Origin) and implements custom web report storage.
 
-
 - The [react-report-designer](react-report-designer) folder contains the client application built with React.
-
-This project contains code snippets used for client-side customization and reflected in our online help topics. Each code snippet is enclosed in a `page.tsx` file in a separate folder. After running the project, navigate the following locations to see the result:
-
-| Location | Description |
-| --- | --- |
-| /client-side-api | Performs some client-side actions.
-| /save-modified-report | Saves a modified report in the currently active tab. Saves all modified reports. | 
-| /manage-properties-panel | Hides or disables individual editors or sections in the **Properties panel** for the specified control type. |
-| /report-designer-api | Calls the Report Designer's `RunWizard` method to invoke New Report Wizard. |
-| /open-report | Adds a button that loads a specified report. |
-| /save-report | Adds a button that saves the current report. |
-
 
 ## Quick Start
 
@@ -52,11 +39,19 @@ Open `http://localhost:3000/` in your browser to view the result. The applicatio
 
 ![Report Designer in JavaScript with React](Images/screenshot.png)
 
-## Files to Review
+## Customization Scenarios
 
-- [page.tsx](react-report-designer/app/page.tsx)
-- [Program.cs](ServerSideApp/ServerSideApp/Program.cs)
-- [ReportingControllers.cs](ServerSideApp/ServerSideApp/Controllers/ReportingControllers.cs)
+This project contains code snippets used for client-side customization and reflected in our online help topics. Each code snippet is enclosed in a `page.tsx` file in a separate folder. After running the project, navigate the following locations to see the result:
+
+| Location | Description | File to Review |
+| --- | --- | --- |
+| /client-side-api | Handles `TabChanged` to display the active report's name and `ReportOpened` to change report units to tenths of a millimeter. Uses `PreviewCustomizeMenuActions` to hide **Print Page** and add a custom preview command. | [page.tsx](react-report-designer/app/client-side-api/page.tsx) |
+| /save-modified-report | Adds buttons to save the modified report in the active tab as `Rep1` or save modified reports across all tabs. The save-all handler assigns names to new reports, resets each tab's modified state after saving, and displays a success notification. | [page.tsx](react-report-designer/app/save-modified-report/page.tsx) |
+| /manage-properties-panel | Uses `BeforeRender` and `GetPropertyInfo` to hide or disable **Properties panel** editors and sections for reports and labels, including watermark settings, the CSV separator, and **Can Grow**. | [page.tsx](react-report-designer/app/manage-properties-panel/page.tsx) |
+| /report-designer-api | Adds a button that calls `RunWizard('NewViaReportWizard')` through the designer reference to open the New Report Wizard. | [page.tsx](react-report-designer/app/report-designer-api/page.tsx) |
+| /open-report | Adds a button that calls `OpenReport("TestReport")` to load the predefined report. | [page.tsx](react-report-designer/app/open-report/page.tsx) |
+| /save-report | Adds a button that calls `SaveReport()` through the designer reference to save the current report. | [page.tsx](react-report-designer/app/save-report/page.tsx) |
+
 
 ## Documentation
 
