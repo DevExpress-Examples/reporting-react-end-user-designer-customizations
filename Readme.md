@@ -41,7 +41,7 @@ Open `http://localhost:3000/` in your browser to view the result. The applicatio
 
 ## Customization Scenarios
 
-This project contains code snippets used for client-side customization and reflected in our online help topics. Each code snippet is enclosed in a `page.tsx` file in a separate folder. After running the project, navigate the following locations to see the result:
+This project contains code snippets that demonstrate client-side customization and appear in our online help topics. Each code snippet is stored in a `page.tsx` file in a separate folder. After you run the project, navigate to the following locations to see the result:
 
 | Location | Description | File to Review |
 | --- | --- | --- |
