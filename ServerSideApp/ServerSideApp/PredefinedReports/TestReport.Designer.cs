@@ -1,9 +1,9 @@
-﻿namespace ServerSideApp.PredefinedReports {
+namespace ServerSideApp.PredefinedReports {
     partial class TestReport {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private System.ComponentModel.IContainer components = null!;
 
         /// <summary> 
         /// Clean up any resources being used.
@@ -512,46 +512,46 @@
 
         #endregion
 
-        private DevExpress.XtraReports.UI.TopMarginBand TopMargin;
-        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin;
-        private DevExpress.XtraReports.UI.XRPageInfo pageInfo1;
-        private DevExpress.XtraReports.UI.XRPageInfo pageInfo2;
-        private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader;
-        private DevExpress.XtraReports.UI.XRLabel label1;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1;
-        private DevExpress.XtraReports.UI.XRTable table1;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow1;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell1;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell2;
-        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2;
-        private DevExpress.XtraReports.UI.XRTable table2;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow2;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell3;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell4;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell5;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell6;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell7;
-        private DevExpress.XtraReports.UI.DetailBand Detail;
-        private DevExpress.XtraReports.UI.XRTable table3;
-        private DevExpress.XtraReports.UI.XRTableRow tableRow3;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell8;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell9;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell10;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell11;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox2;
-        private DevExpress.XtraReports.UI.XRTableCell tableCell12;
-        private DevExpress.XtraReports.UI.XRPictureBox pictureBox3;
-        private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1;
-        private DevExpress.XtraReports.UI.XRLabel label2;
-        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1;
-        private DevExpress.XtraReports.UI.XRControlStyle Title;
-        private DevExpress.XtraReports.UI.XRControlStyle GroupCaption1;
-        private DevExpress.XtraReports.UI.XRControlStyle GroupData1;
-        private DevExpress.XtraReports.UI.XRControlStyle DetailCaption1;
-        private DevExpress.XtraReports.UI.XRControlStyle DetailData1;
-        private DevExpress.XtraReports.UI.XRControlStyle GroupFooterBackground3;
-        private DevExpress.XtraReports.UI.XRControlStyle DetailData3_Odd;
-        private DevExpress.XtraReports.UI.XRControlStyle PageInfo;
+        private DevExpress.XtraReports.UI.TopMarginBand TopMargin = null!;
+        private DevExpress.XtraReports.UI.BottomMarginBand BottomMargin = null!;
+        private DevExpress.XtraReports.UI.XRPageInfo pageInfo1 = null!;
+        private DevExpress.XtraReports.UI.XRPageInfo pageInfo2 = null!;
+        private DevExpress.XtraReports.UI.ReportHeaderBand ReportHeader = null!;
+        private DevExpress.XtraReports.UI.XRLabel label1 = null!;
+        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader1 = null!;
+        private DevExpress.XtraReports.UI.XRTable table1 = null!;
+        private DevExpress.XtraReports.UI.XRTableRow tableRow1 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell1 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell2 = null!;
+        private DevExpress.XtraReports.UI.GroupHeaderBand GroupHeader2 = null!;
+        private DevExpress.XtraReports.UI.XRTable table2 = null!;
+        private DevExpress.XtraReports.UI.XRTableRow tableRow2 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell3 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell4 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell5 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell6 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell7 = null!;
+        private DevExpress.XtraReports.UI.DetailBand Detail = null!;
+        private DevExpress.XtraReports.UI.XRTable table3 = null!;
+        private DevExpress.XtraReports.UI.XRTableRow tableRow3 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell8 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell9 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell10 = null!;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox1 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell11 = null!;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox2 = null!;
+        private DevExpress.XtraReports.UI.XRTableCell tableCell12 = null!;
+        private DevExpress.XtraReports.UI.XRPictureBox pictureBox3 = null!;
+        private DevExpress.XtraReports.UI.GroupFooterBand GroupFooter1 = null!;
+        private DevExpress.XtraReports.UI.XRLabel label2 = null!;
+        private DevExpress.DataAccess.Sql.SqlDataSource sqlDataSource1 = null!;
+        private DevExpress.XtraReports.UI.XRControlStyle Title = null!;
+        private DevExpress.XtraReports.UI.XRControlStyle GroupCaption1 = null!;
+        private DevExpress.XtraReports.UI.XRControlStyle GroupData1 = null!;
+        private DevExpress.XtraReports.UI.XRControlStyle DetailCaption1 = null!;
+        private DevExpress.XtraReports.UI.XRControlStyle DetailData1 = null!;
+        private DevExpress.XtraReports.UI.XRControlStyle GroupFooterBackground3 = null!;
+        private DevExpress.XtraReports.UI.XRControlStyle DetailData3_Odd = null!;
+        private DevExpress.XtraReports.UI.XRControlStyle PageInfo = null!;
     }
 }

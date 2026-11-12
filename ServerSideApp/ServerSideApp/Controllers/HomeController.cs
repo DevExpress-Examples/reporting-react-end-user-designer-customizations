@@ -1,3 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ServerSideApp.Controllers {
@@ -5,9 +10,10 @@ namespace ServerSideApp.Controllers {
         public IActionResult Index() {
             return View();
         }
+
         public IActionResult Error() {
-            Models.ErrorModel model = new Models.ErrorModel();
-            return View(model);
+            ViewData["RequestId"] = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+            return View();
         }
     }
 }

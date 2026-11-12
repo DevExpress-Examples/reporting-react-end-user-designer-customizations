@@ -1,4 +1,4 @@
-using DevExpress.XtraReports.UI;
+﻿using DevExpress.XtraReports.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,8 +10,7 @@ namespace ServerSideApp.PredefinedReports
     {
         public static Dictionary<string, Func<XtraReport>> Reports = new Dictionary<string, Func<XtraReport>>()
         {
-            ["TestReport"] = () => new TestReport(),
-            ["XtraReport1"] = () => new XtraReport1()
+            ["TestReport"] = () => new TestReport()
         };
     }
 }

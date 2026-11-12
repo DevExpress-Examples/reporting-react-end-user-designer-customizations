@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
 namespace ServerSideApp.Data {
@@ -6,22 +6,22 @@ namespace ServerSideApp.Data {
     public class JsonDataConnectionDescription : DataConnection { }
     public abstract class DataConnection {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string DisplayName { get; set; }
-        public string ConnectionString { get; set; }
+        public string Name { get; set; } = null!;
+        public string DisplayName { get; set; } = null!;
+        public string ConnectionString { get; set; } = null!;
     }
 
     public class ReportItem {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string DisplayName { get; set; }
-        public byte[] LayoutData { get; set; }
+        public string Name { get; set; } = null!;
+        public string? DisplayName { get; set; }
+        public byte[] LayoutData { get; set; } = null!;
     }
 
     public class ReportDbContext : DbContext {
-        public DbSet<JsonDataConnectionDescription> JsonDataConnections { get; set; }
-        public DbSet<SqlDataConnectionDescription> SqlDataConnections { get; set; }
-        public DbSet<ReportItem> Reports { get; set; }
+        public DbSet<JsonDataConnectionDescription> JsonDataConnections { get; set; } = null!;
+        public DbSet<SqlDataConnectionDescription> SqlDataConnections { get; set; } = null!;
+        public DbSet<ReportItem> Reports { get; set; } = null!;
         public ReportDbContext(DbContextOptions<ReportDbContext> options) : base(options) {
         }
         public void InitializeDatabase() {
