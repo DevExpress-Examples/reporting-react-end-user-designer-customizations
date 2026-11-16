@@ -35,7 +35,7 @@ function App() {
   };  
   return (
     <ReportDesigner reportUrl="TestReport">
-        <RequestOptions host="http://localhost:5000/" getDesignerModelAction="DXXRD/GetDesignerModel" />\
+        <RequestOptions host="http://localhost:5000/" getDesignerModelAction="DXXRD/GetDesignerModel" />
         <Callbacks TabChanged={onTabChanged} 
                    ReportOpened={onReportOpened}
                    PreviewCustomizeMenuActions={onPreviewCustomizeMenuActions}/>
