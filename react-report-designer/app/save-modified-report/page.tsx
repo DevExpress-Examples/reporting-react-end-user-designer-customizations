@@ -25,10 +25,10 @@ function App() {
     function saveAllReports() {
         var tabs = designerRef.current?.instance().GetTabs() as NavigateTab[];
         tabs?.forEach((tab => {
-            if (tab.isModified()) {
-                if (!tab.url()) tab.url('Report' + Date.now());
-                designerRef.current?.instance().ReportStorageSetData(tab.context().report.serialize(), tab.url())
-                    .done(function (result) {
+            if (tab.isModified) {
+                if (!tab.url) tab.url = 'Report' + Date.now();
+                designerRef.current?.instance().ReportStorageSetData(tab.context.report.serialize(), tab.url)
+                    .then(function () {
                         tab.resetIsModified();
                         ShowMessage(getLocalization("The report has been successfully saved.",
                             "ASPxReportsStringId.ReportDesigner_SaveReport_Message_OK"), NotifyType.success);

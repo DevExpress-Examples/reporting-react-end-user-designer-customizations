@@ -8,10 +8,10 @@ const ReportDesigner = dynamic(() => import('devexpress-reporting-react/dx-repor
 
 function App() {
   const onTabChanged = ({ args }: { args: any }): void => {
-    alert("The tab was changed to " + args.Tab.displayName());
+    alert("The tab was changed to " + args.Tab.displayName);
   };
   const onReportOpened = ({ args }: { args: any }): void => {
-    args.Report.measureUnit("TenthsOfAMillimeter");
+    args.Report.measureUnit = "TenthsOfAMillimeter";
   };
   const onPreviewCustomizeMenuActions = ({ args }: { args: any }): void => {
     var actions = args.Actions;
@@ -35,7 +35,7 @@ function App() {
   };  
   return (
     <ReportDesigner reportUrl="TestReport">
-        <RequestOptions host="http://localhost:5000/" getDesignerModelAction="DXXRD/GetDesignerModel" />\
+        <RequestOptions host="http://localhost:5000/" getDesignerModelAction="DXXRD/GetDesignerModel" />
         <Callbacks TabChanged={onTabChanged} 
                    ReportOpened={onReportOpened}
                    PreviewCustomizeMenuActions={onPreviewCustomizeMenuActions}/>

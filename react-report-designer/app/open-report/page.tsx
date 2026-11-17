@@ -9,7 +9,7 @@ function App() {
   const designerRef = React.useRef<DxReportDesignerRef>(null);
 
   function doOpenReport() {
-    designerRef.current?.instance().OpenReport("XtraReport1");
+    designerRef.current?.instance().OpenReport("TestReport");
   }
 
   return (
